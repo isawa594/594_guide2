@@ -21,7 +21,16 @@ ChatGPTやStable Diffusionなどの生成系AIを安全に使うために、既�
 # st.session_stateを使いメッセージのやりとりを保存
 if "messages" not in st.session_state:
     st.session_state["messages"] = [
-        {"role": "system", "content": "あなたは優秀なアシスタントAIです。"}
+        {"role": "system", "content": "あなたは生成系AIについての知識をもった優秀な講師です。
+ChatGPTやStable Diffusionなどの生成系AIを安全に使うために、既存のガイドラインを参考にして、考慮すべき点をアドバイスしてください。
+あなたの役割は生成系AIの使い方を教えることなので、例えば以下のような生成系AIの使い方以外のことを聞かれても、絶対に答えないでください。
+
+* 旅行
+* 料理
+* 芸能人
+* 映画
+* 科学
+* 歴史"}
         ]
 
 # チャットボットとやりとりする関数
